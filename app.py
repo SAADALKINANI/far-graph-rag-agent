@@ -4,7 +4,6 @@ Set ANTHROPIC_API_KEY or OPENAI_API_KEY / OPENAI_BASE_URL (e.g. a local Ollama) 
 answer generator from the offline extractive mode to an LLM; citation guardrails apply either way.
 """
 import json
-import pickle
 import sys
 from pathlib import Path
 
@@ -14,16 +13,16 @@ import streamlit as st
 ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT / "src"))
 from farrag.agents import Orchestrator  # noqa: E402
+from farrag.bootstrap import load_or_build  # noqa: E402
 from farrag.spending_data import synthetic_awards  # noqa: E402
 
 st.set_page_config(page_title="Federal Acquisition Assistant", layout="wide")
 
 
-@st.cache_resource
+@st.cache_resource(show_spinner="First launch: building the FAR index and training the reranker (~2 min, one time)...")
 def boot():
-    b = pickle.load(open(ROOT / "artifacts" / "retriever.pkl", "rb"))
-    r = b["retriever"]
-    return Orchestrator(r, b["scope"], r.sections, synthetic_awards()), r
+    r, scope = load_or_build(ROOT)
+    return Orchestrator(r, scope, r.sections, synthetic_awards()), r
 
 
 orch, retr = boot()

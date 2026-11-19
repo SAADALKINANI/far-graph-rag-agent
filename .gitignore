@@ -7,5 +7,4 @@ artifacts/
 data/raw/
 data/synthetic_xbd/
 data/*.csv.gz
-data/corpus/
 .venv/
