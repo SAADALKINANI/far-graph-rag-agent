@@ -1,0 +1,75 @@
+{"id": "q001", "intent": "regulation", "question": "What is the micro-purchase threshold?", "gold": ["2.101"], "facts": ["$15,000"]}
+{"id": "q002", "intent": "regulation", "question": "What is the simplified acquisition threshold?", "gold": ["2.101"], "facts": ["$350,000"]}
+{"id": "q003", "intent": "regulation", "question": "Above what dollar amount must the contracting officer obtain certified cost or pricing data?", "gold": ["15.403-4"], "facts": ["$2.5 million"]}
+{"id": "q004", "intent": "regulation", "question": "Who must approve a justification for other than full and open competition for a contract over $20 million?", "gold": ["6.304"], "facts": ["$20 million"]}
+{"id": "q005", "intent": "regulation", "question": "Who approves a sole-source justification between $900,000 and $20 million?", "gold": ["6.304"], "facts": ["advocate for competition"]}
+{"id": "q006", "intent": "regulation", "question": "What is the maximum total duration of basic and option periods for a services contract?", "gold": ["17.204"], "facts": ["5 years"]}
+{"id": "q007", "intent": "regulation", "question": "Must each awardee on a multiple-award IDIQ get a fair opportunity to be considered for task orders?", "gold": ["16.505"], "facts": ["fair opportunity"]}
+{"id": "q008", "intent": "regulation", "question": "How long does a protester have to file at GAO after initial adverse agency action on an agency-level protest?", "gold": ["33.103"], "facts": ["10 days"]}
+{"id": "q009", "intent": "regulation", "question": "What is the general maximum period of debarment?", "gold": ["9.406-4"], "facts": ["3 years"]}
+{"id": "q010", "intent": "regulation", "question": "Within how many days after notification of award must an offeror request a postaward debriefing?", "gold": ["15.506"], "facts": ["3 days"]}
+{"id": "q011", "intent": "regulation", "question": "Are the costs of alcoholic beverages allowable on a cost contract?", "gold": ["31.205-51"], "facts": ["unallowable"]}
+{"id": "q012", "intent": "regulation", "question": "What is a personal services contract and why is it generally prohibited?", "gold": ["37.104"], "facts": ["employer-employee relationship"]}
+{"id": "q013", "intent": "regulation", "question": "Do offerors need to be registered in SAM when submitting an offer?", "gold": ["4.1102"], "facts": ["registered in SAM"]}
+{"id": "q014", "intent": "regulation", "question": "When is the lowest price technically acceptable source selection process appropriate?", "gold": ["15.101-2"], "facts": ["lowest evaluated price"]}
+{"id": "q015", "intent": "regulation", "question": "What general standards must a prospective contractor meet to be determined responsible?", "gold": ["9.104-1"], "facts": ["adequate financial resources"]}
+{"id": "q016", "intent": "regulation", "question": "How often must past performance evaluations be prepared?", "gold": ["42.1502"], "facts": ["at least annually"]}
+{"id": "q017", "intent": "regulation", "question": "Who may ratify an unauthorized commitment?", "gold": ["1.602-3"], "facts": ["head of the contracting activity"]}
+{"id": "q018", "intent": "regulation", "question": "What conditions must be met before using a cost-reimbursement contract?", "gold": ["16.301-3"], "facts": ["acquisition plan"]}
+{"id": "q019", "intent": "regulation", "question": "When can full and open competition be skipped because of unusual and compelling urgency?", "gold": ["6.302-2"], "facts": ["seriously injured"]}
+{"id": "q020", "intent": "regulation", "question": "Can an agency avoid full and open competition when there is only one responsible source?", "gold": ["6.302-1"], "facts": ["one responsible source"]}
+{"id": "q021", "intent": "regulation", "question": "When can the agency head waive competition as not in the public interest?", "gold": ["6.302-7"], "facts": ["public interest"]}
+{"id": "q022", "intent": "regulation", "question": "Must acquisitions between the micro-purchase threshold and the simplified acquisition threshold be set aside for small business?", "gold": ["19.502-2", "13.003"], "facts": ["set aside for small business"]}
+{"id": "q023", "intent": "regulation", "question": "Up to what amount can simplified procedures be used for commercial products and services?", "gold": ["13.500"], "facts": ["$9 million"]}
+{"id": "q024", "intent": "regulation", "question": "How long before issuing a solicitation must a notice of proposed contract action be published?", "gold": ["5.203"], "facts": ["15 days"]}
+{"id": "q025", "intent": "regulation", "question": "What is the definition of a commercial product?", "gold": ["2.101"], "facts": ["customarily used by the general public"]}
+{"id": "q026", "intent": "regulation", "question": "Who is protected from disclosure of contractor bid or proposal information and source selection information?", "gold": ["3.104-4"], "facts": ["source selection information"]}
+{"id": "q027", "intent": "regulation", "question": "When can a time-and-materials contract be used?", "gold": ["16.601"], "facts": ["time-and-materials"]}
+{"id": "q028", "intent": "regulation", "question": "What must the contracting officer consider when soliciting competition under simplified acquisition procedures?", "gold": ["13.106-1"], "facts": ["soliciting competition"]}
+{"id": "q029", "intent": "regulation", "question": "What are the ordering procedures for Federal Supply Schedule supplies that do not require a statement of work?", "gold": ["8.405-1"], "facts": ["statement of work is not required"]}
+{"id": "q030", "intent": "regulation", "question": "Which termination for convenience clause applies to fixed-price contracts under the simplified acquisition threshold?", "gold": ["49.502"], "facts": ["52.249-1"]}
+{"id": "q031", "intent": "regulation", "question": "What must a justification for other than full and open competition contain?", "gold": ["6.303-2"], "facts": ["justification"]}
+{"id": "q032", "intent": "regulation", "question": "What are the causes for debarment of a contractor?", "gold": ["9.406-2"], "facts": ["debar"]}
+{"id": "q033", "intent": "regulation", "question": "What are the causes for suspension of a contractor?", "gold": ["9.407-2"], "facts": ["suspend"]}
+{"id": "q034", "intent": "regulation", "question": "How does the tradeoff source selection process work?", "gold": ["15.101-1"], "facts": ["tradeoff"]}
+{"id": "q035", "intent": "regulation", "question": "What evaluation factors must be included in every source selection, such as price and past performance?", "gold": ["15.304"], "facts": ["past performance"]}
+{"id": "q036", "intent": "regulation", "question": "What is the difference between clarifications and discussions, and what is the competitive range?", "gold": ["15.306"], "facts": ["competitive range"]}
+{"id": "q037", "intent": "regulation", "question": "What should a preaward debriefing include?", "gold": ["15.505"], "facts": ["debriefing"]}
+{"id": "q038", "intent": "regulation", "question": "How is the profit or fee prenegotiation objective established?", "gold": ["15.404-4"], "facts": ["prenegotiation objective"]}
+{"id": "q039", "intent": "regulation", "question": "What proposal analysis techniques can be used to evaluate price, like price analysis and cost analysis?", "gold": ["15.404-1"], "facts": ["price analysis"]}
+{"id": "q040", "intent": "regulation", "question": "What are the exceptions to requiring certified cost or pricing data?", "gold": ["15.403-1"], "facts": ["adequate price competition"]}
+{"id": "q041", "intent": "regulation", "question": "When is a firm-fixed-price contract suitable?", "gold": ["16.202-2"], "facts": ["firm-fixed-price"]}
+{"id": "q042", "intent": "regulation", "question": "What is an indefinite-quantity contract and what minimum quantity must it require?", "gold": ["16.504"], "facts": ["minimum quantity"]}
+{"id": "q043", "intent": "regulation", "question": "What must be true before a contracting officer exercises an option?", "gold": ["17.207"], "facts": ["option"]}
+{"id": "q044", "intent": "regulation", "question": "What policy governs market research before developing new requirements?", "gold": ["10.001"], "facts": ["market research"]}
+{"id": "q045", "intent": "regulation", "question": "What should the contents of a written acquisition plan address?", "gold": ["7.105"], "facts": ["acquisition plan"]}
+{"id": "q046", "intent": "regulation", "question": "What is the general policy for service contracts and inherently governmental functions?", "gold": ["37.102", "7.503"], "facts": ["inherently governmental"]}
+{"id": "q047", "intent": "regulation", "question": "Which functions are considered inherently governmental and may not be contracted out?", "gold": ["7.503"], "facts": ["inherently governmental"]}
+{"id": "q048", "intent": "regulation", "question": "What is the scope of contracting officer authority and who can bind the Government?", "gold": ["1.602-1"], "facts": ["contracting officers"]}
+{"id": "q049", "intent": "regulation", "question": "What does the contractor code of business ethics and conduct require?", "gold": ["3.1002", "3.1004"], "facts": ["code of business ethics"]}
+{"id": "q050", "intent": "regulation", "question": "How must agency-level protests be handled and resolved?", "gold": ["33.103"], "facts": ["protest"]}
+{"id": "q051", "intent": "regulation", "question": "What is the procedure for terminating a contract for default?", "gold": ["49.402-3"], "facts": ["default"]}
+{"id": "q052", "intent": "regulation", "question": "What are the Buy American requirements for supplies?", "gold": ["25.101", "25.102", "25.001"], "facts": ["Buy American"]}
+{"id": "q053", "intent": "regulation", "question": "What is the HUBZone program price evaluation preference?", "gold": ["19.1307"], "facts": ["HUBZone"]}
+{"id": "q054", "intent": "regulation", "question": "When can a contract be set aside for service-disabled veteran-owned small businesses?", "gold": ["19.1405"], "facts": ["SDVOSB"]}
+{"id": "q055", "intent": "regulation", "question": "How are contracts awarded through the SBA 8(a) program?", "gold": ["19.800", "19.804-1", "19.805-1", "19.803"], "facts": ["8(a)"]}
+{"id": "q056", "intent": "regulation", "question": "What are the prompt payment due dates for invoices?", "gold": ["32.904"], "facts": ["due date"]}
+{"id": "q057", "intent": "regulation", "question": "When are interest penalties paid for late payments under the Prompt Payment Act?", "gold": ["32.907"], "facts": ["interest penalt"]}
+{"id": "q058", "intent": "regulation", "question": "What is the policy on describing agency needs and specifications?", "gold": ["11.002"], "facts": ["agency"]}
+{"id": "q059", "intent": "regulation", "question": "What are the procedures for using the Governmentwide commercial purchase card for micro-purchases?", "gold": ["13.301", "13.201"], "facts": ["purchase card"]}
+{"id": "q060", "intent": "regulation", "question": "What does FAR 15.404-4 say?", "gold": ["15.404-4"], "facts": ["profit"]}
+{"id": "q061", "intent": "regulation", "question": "Summarize FAR 9.406-4 period of debarment", "gold": ["9.406-4"], "facts": ["3 years"]}
+{"id": "q062", "intent": "regulation", "question": "What does subpart 19.8 cover?", "gold": ["Subpart 19.8", "19.800", "19.801", "19.802"], "facts": ["8(a)"]}
+{"id": "q063", "intent": "regulation", "question": "Can options be used to extend services contracts beyond the 5 year limit for information technology?", "gold": ["17.204"], "facts": ["information technology"]}
+{"id": "q064", "intent": "regulation", "question": "Are entertainment costs allowable?", "gold": ["31.205-14"], "facts": ["unallowable"]}
+{"id": "q065", "intent": "regulation", "question": "What are the rules on lobbying costs?", "gold": ["31.205-22"], "facts": ["lobbying"]}
+{"id": "q066", "intent": "regulation", "question": "What is organizational conflict of interest and how should contracting officers handle it?", "gold": ["9.504", "9.502", "9.505"], "facts": ["organizational conflict"]}
+{"id": "q067", "intent": "regulation", "question": "What is the policy against kickbacks?", "gold": ["3.502-2", "3.502-1"], "facts": ["kickback"]}
+{"id": "q068", "intent": "regulation", "question": "When must a contractor report a possible False Claims Act violation under mandatory disclosure?", "gold": ["3.1003"], "facts": ["False Claims Act"]}
+{"id": "q069", "intent": "regulation", "question": "What is the policy for using electronic commerce in federal acquisition?", "gold": ["4.502"], "facts": ["electronic commerce"]}
+{"id": "q070", "intent": "regulation", "question": "How must contractor performance information be used in source selection?", "gold": ["42.1503", "15.305"], "facts": ["past performance"]}
+{"id": "q071", "intent": "out_of_scope", "question": "What is the GSA per diem lodging rate for Boston in July?", "gold": [], "facts": []}
+{"id": "q072", "intent": "out_of_scope", "question": "Who won the 2022 World Cup?", "gold": [], "facts": []}
+{"id": "q073", "intent": "out_of_scope", "question": "How do I bake sourdough bread?", "gold": [], "facts": []}
+{"id": "q074", "intent": "out_of_scope", "question": "What is the capital of Australia?", "gold": [], "facts": []}
+{"id": "q075", "intent": "out_of_scope", "question": "Recommend a good laptop for gaming", "gold": [], "facts": []}

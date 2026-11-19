@@ -1,0 +1,16 @@
+{"q": "What were total obligations in FY2024?", "sql": "SELECT ROUND(SUM(obligation),2) FROM awards WHERE fiscal_year = 2024"}
+{"q": "Top 5 vendors by obligations in FY2023", "sql": "SELECT recipient_name, ROUND(SUM(obligation),2) t FROM awards WHERE fiscal_year = 2023 GROUP BY recipient_name ORDER BY t DESC LIMIT 5"}
+{"q": "How much did the Department of Defense spend on janitorial services?", "sql": "SELECT ROUND(SUM(obligation),2) FROM awards WHERE awarding_agency = 'Department of Defense' AND naics_code = '561720'"}
+{"q": "Show total spending by agency for fiscal year 2025", "sql": "SELECT awarding_agency, ROUND(SUM(obligation),2) t FROM awards WHERE fiscal_year = 2025 GROUP BY awarding_agency ORDER BY t DESC"}
+{"q": "What share of Department of Veterans Affairs obligations were sole source?", "sql": "SELECT ROUND(100.0*SUM(CASE WHEN extent_competed='NOT COMPETED' THEN obligation ELSE 0 END)/SUM(obligation),2) FROM awards WHERE awarding_agency = 'Department of Veterans Affairs'"}
+{"q": "How many contracts did GSA award in FY2022?", "sql": "SELECT COUNT(*) FROM awards WHERE fiscal_year = 2022 AND awarding_agency = 'General Services Administration'"}
+{"q": "Spending trend by fiscal year for engineering services", "sql": "SELECT fiscal_year, ROUND(SUM(obligation),2) FROM awards WHERE naics_code = '541330' GROUP BY fiscal_year ORDER BY fiscal_year"}
+{"q": "Top 3 contractors for the Department of Energy", "sql": "SELECT recipient_name, ROUND(SUM(obligation),2) t FROM awards WHERE awarding_agency = 'Department of Energy' GROUP BY recipient_name ORDER BY t DESC LIMIT 3"}
+{"q": "Obligations by set aside type in FY2024", "sql": "SELECT set_aside_type, ROUND(SUM(obligation),2) t FROM awards WHERE fiscal_year = 2024 GROUP BY set_aside_type ORDER BY t DESC"}
+{"q": "What percent of spending was sole source in fiscal year 2021?", "sql": "SELECT ROUND(100.0*SUM(CASE WHEN extent_competed='NOT COMPETED' THEN obligation ELSE 0 END)/SUM(obligation),2) FROM awards WHERE fiscal_year = 2021"}
+{"q": "How much did NASA spend on research and development in the physical sciences?", "sql": "SELECT ROUND(SUM(obligation),2) FROM awards WHERE awarding_agency = 'National Aeronautics and Space Administration' AND naics_code = '541715'"}
+{"q": "Top 10 recipients of small business set-aside obligations", "sql": "SELECT recipient_name, ROUND(SUM(obligation),2) t FROM awards WHERE set_aside_type <> 'NONE' GROUP BY recipient_name ORDER BY t DESC LIMIT 10"}
+{"q": "Total spending by fiscal year for the Department of Homeland Security", "sql": "SELECT fiscal_year, ROUND(SUM(obligation),2) FROM awards WHERE awarding_agency = 'Department of Homeland Security' GROUP BY fiscal_year ORDER BY fiscal_year"}
+{"q": "How many awards were made for data processing and hosting services in FY2025?", "sql": "SELECT COUNT(*) FROM awards WHERE fiscal_year = 2025 AND naics_code = '518210'"}
+{"q": "Which agency spent the most on computer systems design services?", "sql": "SELECT awarding_agency, ROUND(SUM(obligation),2) t FROM awards WHERE naics_code = '541512' GROUP BY awarding_agency ORDER BY t DESC"}
+{"q": "Total obligations for the Department of Transportation in fiscal year 2023", "sql": "SELECT ROUND(SUM(obligation),2) FROM awards WHERE fiscal_year = 2023 AND awarding_agency = 'Department of Transportation'"}

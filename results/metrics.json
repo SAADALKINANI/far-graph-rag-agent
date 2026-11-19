@@ -1,0 +1,226 @@
+{
+  "corpus": {
+    "sections": 3868,
+    "with_text": 3113,
+    "chunks": 5690,
+    "citation_edges": 6215,
+    "words": 939476
+  },
+  "far_source": "GSA/GSA-Acquisition-FAR (HTML edition, repo commit 2026-03-30)",
+  "golden_set": {
+    "answerable": 70,
+    "out_of_scope": 5
+  },
+  "reranker": {
+    "train_queries": 1052,
+    "pairs": 65250,
+    "feature_importance": {
+      "section_bm25_max": 0.6805,
+      "title_overlap": 0.0686,
+      "bm25_rank": 0.0398,
+      "bm25": 0.032,
+      "bm25_raw": 0.0287,
+      "first_chunk": 0.0273,
+      "dense": 0.0175,
+      "header_overlap": 0.0175,
+      "len_log": 0.0172,
+      "ppr": 0.017,
+      "dense_rank": 0.015,
+      "rrf": 0.0129,
+      "is_clause": 0.0124,
+      "section_support": 0.0102,
+      "is_definitions": 0.0024,
+      "depth": 0.001,
+      "def_term_match": 0.0,
+      "sid_match": 0.0,
+      "part_match": 0.0,
+      "graph_only": 0.0
+    }
+  },
+  "retrieval": {
+    "bm25": {
+      "recall@1": 0.5571428571428572,
+      "recall@5": 0.8857142857142857,
+      "recall@10": 0.9142857142857143,
+      "mrr@10": 0.7007312925170068,
+      "ndcg@10": 0.7542763446489629,
+      "latency_p50_ms": 6.80696964263916,
+      "latency_p95_ms": 12.410795688629149
+    },
+    "dense": {
+      "recall@1": 0.4142857142857143,
+      "recall@5": 0.7714285714285715,
+      "recall@10": 0.8428571428571429,
+      "mrr@10": 0.5563832199546485,
+      "ndcg@10": 0.6261264210774231,
+      "latency_p50_ms": 42.42229461669922,
+      "latency_p95_ms": 55.663955211639404
+    },
+    "hybrid": {
+      "recall@1": 0.5571428571428572,
+      "recall@5": 0.8428571428571429,
+      "recall@10": 0.9142857142857143,
+      "mrr@10": 0.6863265306122449,
+      "ndcg@10": 0.7423482550748397,
+      "latency_p50_ms": 53.39550971984863,
+      "latency_p95_ms": 65.49018621444702
+    },
+    "graph": {
+      "recall@1": 0.5285714285714286,
+      "recall@5": 0.8428571428571429,
+      "recall@10": 0.9142857142857143,
+      "mrr@10": 0.6635090702947846,
+      "ndcg@10": 0.724711592423132,
+      "latency_p50_ms": 60.63055992126465,
+      "latency_p95_ms": 84.08573865890502
+    },
+    "full": {
+      "recall@1": 0.5428571428571428,
+      "recall@5": 0.8714285714285714,
+      "recall@10": 0.9142857142857143,
+      "mrr@10": 0.6765476190476191,
+      "ndcg@10": 0.7347563021124619,
+      "latency_p50_ms": 69.05150413513184,
+      "latency_p95_ms": 90.54868221282958
+    }
+  },
+  "retrieval_synthetic_dev": {
+    "bm25": {
+      "recall@1": 0.56,
+      "recall@5": 0.765,
+      "recall@10": 0.805,
+      "mrr@10": 0.6488353174603176,
+      "ndcg@10": 0.6871788877348461,
+      "latency_p50_ms": 5.647420883178711,
+      "latency_p95_ms": 10.400617122650146
+    },
+    "hybrid": {
+      "recall@1": 0.385,
+      "recall@5": 0.6475,
+      "recall@10": 0.71,
+      "mrr@10": 0.4959414682539682,
+      "ndcg@10": 0.5480315070289835,
+      "latency_p50_ms": 53.41672897338867,
+      "latency_p95_ms": 65.63814878463745
+    },
+    "full": {
+      "recall@1": 0.645,
+      "recall@5": 0.8075,
+      "recall@10": 0.8275,
+      "mrr@10": 0.7164513888888889,
+      "ndcg@10": 0.7441371725639208,
+      "latency_p50_ms": 67.97778606414795,
+      "latency_p95_ms": 118.0605053901672
+    }
+  },
+  "answers": {
+    "key_fact_recall": 0.8,
+    "answers_with_citations": 0.9428571428571428,
+    "citation_validity": 1.0,
+    "cites_a_gold_section": 0.8484848484848485,
+    "false_abstention_rate": 0.05714285714285714,
+    "out_of_scope_abstention_rate": 0.8,
+    "latency_p50_ms": 130.27679920196533,
+    "latency_p95_ms": 162.54781484603882
+  },
+  "router": {
+    "accuracy": 1.0,
+    "n": 92,
+    "errors": []
+  },
+  "nl_to_sql": {
+    "execution_accuracy": 1.0,
+    "n": 16,
+    "write_statements_blocked": true
+  },
+  "compliance": {
+    "thresholds_parsed_from_far_text": {
+      "micro_purchase": 15000.0,
+      "simplified": 350000.0,
+      "commercial_simplified_cap": 9000000.0,
+      "certified_cost_pricing": 2500000.0,
+      "ja_co_max": 900000.0,
+      "ja_competition_advocate_max": 20000000.0,
+      "ja_hca_max": 90000000.0
+    },
+    "example": {
+      "estimated_value": 3200000.0,
+      "commercial": false,
+      "sole_source": true,
+      "services": true,
+      "checklist": [
+        {
+          "topic": "Procedure",
+          "finding": "Above the simplified acquisition threshold: use FAR Part 15 (negotiation) or Part 14 (sealed bidding).",
+          "citation": "FAR Part 15 / Part 12"
+        },
+        {
+          "topic": "Small business",
+          "finding": "Set aside if the rule of two is met; otherwise document small business consideration.",
+          "citation": "FAR 19.502-2"
+        },
+        {
+          "topic": "Publicizing",
+          "finding": "Publish the notice at least 15 days before the solicitation and allow at least a 30-day response time.",
+          "citation": "FAR 5.203"
+        },
+        {
+          "topic": "Competition",
+          "finding": "Sole source requires a written justification and approval (J&A) citing one of the 6.302 authorities.",
+          "citation": "FAR 6.303-1 / 6.303-2"
+        },
+        {
+          "topic": "J&A approval level",
+          "finding": "For $3,200,000: competition advocate for the procuring activity (not delegable). (DoD, NASA and Coast Guard use a $150M ceiling instead of the civilian tier where applicable.)",
+          "citation": "FAR 6.304"
+        },
+        {
+          "topic": "Cost or pricing data",
+          "finding": "Above $2.5M with no adequate price competition: certified cost or pricing data are required unless an exception applies.",
+          "citation": "FAR 15.403-4 / 15.403-1"
+        }
+      ],
+      "thresholds_used": {
+        "micro_purchase": 15000.0,
+        "simplified": 350000.0,
+        "commercial_simplified_cap": 9000000.0,
+        "certified_cost_pricing": 2500000.0,
+        "ja_co_max": 900000.0,
+        "ja_competition_advocate_max": 20000000.0,
+        "ja_hca_max": 90000000.0
+      },
+      "threshold_sources": {
+        "micro_purchase": [
+          "2.101",
+          "Micro-purchase threshold means $15,000,"
+        ],
+        "simplified": [
+          "2.101",
+          "Simplified acquisition threshold means $350,000,"
+        ],
+        "commercial_simplified_cap": [
+          "13.500",
+          "not exceeding $9 million"
+        ],
+        "certified_cost_pricing": [
+          "15.403-4",
+          "and $2.5 million for prime contracts awarded on or after"
+        ],
+        "ja_co_max": [
+          "6.304",
+          "proposed contract not exceeding $900,000,"
+        ],
+        "ja_competition_advocate_max": [
+          "6.304",
+          "over $900,000 but not exceeding $20 million"
+        ],
+        "ja_hca_max": [
+          "6.304",
+          "over $20 million, but not exceeding $90 million"
+        ]
+      },
+      "disclaimer": "Decision support only - not legal advice."
+    }
+  },
+  "total_seconds": 359.08102798461914
+}
