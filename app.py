@@ -46,7 +46,7 @@ with tab_chat:
             st.dataframe(pd.DataFrame(out["rows"]))
             st.caption("Data: synthetic sample in the USAspending.gov schema (see README to load real awards).")
         elif out["intent"] == "compliance":
-            st.dataframe(pd.DataFrame(out["checklist"]), use_container_width=True)
+            st.dataframe(pd.DataFrame(out["checklist"]), width="stretch")
             st.caption("Thresholds were parsed from the current FAR text at start-up: " +
                        ", ".join(f"{k} = ${v:,.0f}" for k, v in out["thresholds_used"].items()))
             st.markdown("**Supporting FAR text:** " + out["supporting_answer"])

@@ -92,7 +92,9 @@ class ExtractiveGenerator:
                     qt & {"much", "threshold", "amount", "long", "many", "day", "year", "maximum", "period"})
                 cands.append((overlap + nums - 0.08 * r - 0.01 * j, r, j, s, h.chunk.sid))
         cands.sort(key=lambda c: -c[0])
-        chosen = sorted(cands[:max_sent], key=lambda c: (c[1], c[2]))
+        top = cands[:max_sent]
+        lead = [c for c in top if c[0] >= 1.0][:1]                  # a matched definition goes first
+        chosen = lead + sorted([c for c in top if c not in lead], key=lambda c: (c[1], c[2]))
         return " ".join(f"{s} [FAR {sid}]" for *_, s, sid in chosen)
 
 
