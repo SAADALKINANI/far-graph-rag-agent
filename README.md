@@ -70,9 +70,10 @@ write statements blocked by the SQLite authorizer.
 
 ```bash
 pip install -r requirements.txt
-bash scripts/download_data.sh          # official FAR HTML from github.com/GSA/GSA-Acquisition-FAR
+streamlit run app.py                   # works right after cloning: first launch builds the index from the
+                                       # committed parsed corpus (~2 min, one time), then chat UI + scorecard tab
+bash scripts/download_data.sh          # optional: re-download the official FAR HTML (github.com/GSA/GSA-Acquisition-FAR)
 python scripts/run_pipeline.py         # parse → index → train reranker → full evaluation (~5 min, CPU)
-streamlit run app.py                   # chat UI + scorecard tab
 pytest -q                              # 10 unit tests (toy corpus, runs in ~1 s)
 # Optional: export ANTHROPIC_API_KEY=... (or OPENAI_BASE_URL=http://localhost:11434/v1 for Ollama)
 ```
